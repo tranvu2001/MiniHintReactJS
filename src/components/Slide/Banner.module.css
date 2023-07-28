@@ -1,0 +1,18 @@
+.banner {
+    max-width: 100%;
+}
+
+.banner-img {
+    width: 100%;
+}
+
+/* @media (min-width: 375px) and (max-width: 739px) { */
+
+/* } */
+
+@media (min-width: 320px) and (max-width: 739px) {
+    .banner {
+        /* margin-top: var(--header-mobile-height); */
+        display: none;
+    }
+}

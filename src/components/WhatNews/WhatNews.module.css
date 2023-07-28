@@ -1,0 +1,134 @@
+.what-news {
+    width: 1200px;
+    min-height: 570px;
+    margin: 0 31px;
+    max-width: 100%;
+}
+
+.container {
+    max-width: 100%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.see-all {
+    font-size: 1.8rem;
+    font-weight: 500;
+    position: relative;
+    margin-right: 30px;
+}
+
+.see-all::before {
+    content: "";
+    width: 0px;
+    height: 0.5px;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transition: 0.4s ease;
+}
+
+.see-all:hover.see-all::before {
+    width: 100%;
+}
+
+.see-all:hover {
+    color: #0056b3;
+}
+
+/* Content */
+.content {
+    display: grid;
+    /* align-items: center; */
+    grid-template-columns: 65% 35%;
+    /* overflow: hidden; */
+}
+
+.product-list {
+    display: grid;
+    /* align-items: center; */
+    grid-template-columns: 33.333% 33.333% 33.333%;
+    /* flex: 1; */
+}
+
+.banner {
+    /* flex: 1; */
+}
+
+@media (min-width: 1440px) {
+    .what-news {
+        width: unset;
+        /* width: 100%; */
+    }
+
+    .product-list {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media (max-width: 1279px) and (min-width: 1024px) {
+    .what-news {
+        width: unset;
+        /* width: 100%; */
+        min-height: 500px;
+    }
+
+    /* .content {
+        grid-template-columns: 60% 40%;
+    } */
+
+    .banner {
+        margin-left: 30px;
+    }
+
+    .product-list {
+        grid-template-columns: 35% 35% 35%;
+    }
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .what-news {
+        width: unset;
+        min-height: 550px;
+    }
+    .header {
+        margin-top: 60px;
+    }
+
+    .content {
+        grid-template-columns: 100%;
+    }
+
+    .banner {
+        display: none;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 739px) {
+    .what-news {
+        width: unset;
+        /* padding-top: 80px; */
+    }
+
+    .see-all {
+        display: none;
+    }
+
+    .content {
+        grid-template-columns: 100%;
+    }
+
+    .product-list {
+        grid-template-columns: 100%;
+    }
+}

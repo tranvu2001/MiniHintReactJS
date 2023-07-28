@@ -1,0 +1,14 @@
+.best-offer {
+    width: 100%;
+    margin: 100px 0;
+}
+
+.banner-2 {
+    width: 100%;
+}
+
+@media (min-width: 320px) and (max-width: 739px) {
+    .best-offer {
+        display: none;
+    }
+}
