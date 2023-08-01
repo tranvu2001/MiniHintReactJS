@@ -59,7 +59,6 @@ const Register = () => {
                         displayName: input.name
                     })
                 }).catch((err) => alert(err.message))
-                console.log(userCredential.user);
             })
             .catch(err => {
                 if (err.code === AuthErrorCodes.WEAK_PASSWORD) {

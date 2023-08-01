@@ -64,7 +64,6 @@ const AddBrand = () => {
     //     }))
     // }, [image])
     
-    console.log(input)
 
     return (
         <div className="add-brand w-full text-center mt-[17px]">

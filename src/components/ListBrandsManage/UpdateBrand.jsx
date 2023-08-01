@@ -68,7 +68,6 @@ const UpdateBrand = () => {
             navigate('/dashboard/brand-manage')
         })
     }
-    console.log(input)
 
     return (
         <div className="update-brand w-full text-center mt-[17px]">

@@ -13,7 +13,6 @@ const ViewProduct = () => {
         })
     }, [])
 
-    console.log(product)
 
     const splitString = (string) => {
         const stringToArray = string?.split("")

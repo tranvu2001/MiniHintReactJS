@@ -7,8 +7,7 @@ const Categories = () => {
 
     const [productByCategory, setProductByCategory] = useState([])
     const {categoryId, brandId} = useParams()
-    console.log(categoryId)
-    console.log(brandId)
+
 
     useEffect(() => {
         ProductServices.getProducts().then(res => {

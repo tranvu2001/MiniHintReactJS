@@ -60,7 +60,7 @@ function App() {
       if (!user) {
         // user log out, handle something here
         setIsLogin(false)
-        console.log('User is not logged in')
+        // console.log('User is not logged in')
         return;
       }
 
@@ -68,9 +68,9 @@ function App() {
       const token = await user.getIdToken();
       setIsLogin(true)
       setCurrentUser(user)
-      console.log(user.displayName)
-      console.log('Logged in user: ', token)
-      console.log('uid: ', user.uid)
+      // console.log(user.displayName)
+      // console.log('Logged in user: ', token)
+      // console.log('uid: ', user.uid)
       localStorage.setItem('USER_INFO', JSON.stringify({
         displayName: user.displayName,
         email: user.email,

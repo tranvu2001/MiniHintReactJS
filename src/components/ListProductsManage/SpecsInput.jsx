@@ -1,6 +1,5 @@
 
 const SpecsInput = ({field}) => {
-    console.log(field)
     return (        
         <>
             {field.map((item, index) => (

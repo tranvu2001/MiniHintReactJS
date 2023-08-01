@@ -26,7 +26,6 @@ const ProductDetail = () => {
     const {addItem} = useCart()
 
     const {slugName} = useParams()
-    console.log(product)
     
     useEffect(() => {
         ProductServices.getProductBySlugName(slugName).then(res => {
@@ -110,10 +109,8 @@ const ProductDetail = () => {
         alert("Thêm vào giỏ hàng thành công")
         addItem(ProductDetail ,1)
     }
-    console.log(productCart)
     const id = product?.productId
 
-    console.log(id)
     return (
         <div className={cx('product-detail')}>
                 <div className={cx('container')}>

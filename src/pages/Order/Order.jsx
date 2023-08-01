@@ -12,14 +12,6 @@ const Order = () => {
     const infoUser = JSON.parse(localStorage.getItem("USER_INFO"))
     const cartItems = JSON.parse(localStorage.getItem("react-use-cart"))
     const authContext = useAuthValue()
-    console.log(cartItems)
-    // const statusList = [
-    //     {id: 1, name: 'Chờ xác nhận'},
-    //     {id: 2, name: 'Đã xác nhận'},
-    //     {id: 3, name: 'Đang giao'},
-    //     {id: 4, name: 'Đã giao'},
-    //     {id: 5, name: 'Hủy'},
-    // ]
     const [input, setInput] = useState(
         {
             email: infoUser.email,
@@ -47,7 +39,6 @@ const Order = () => {
         }
     })
 
-    console.log(authContext)
     
     const handleChange = (e) => {
         setInput(prevState => ({
@@ -67,7 +58,6 @@ const Order = () => {
                 })
             })
         
-        // console.log()
     }
 
     return (

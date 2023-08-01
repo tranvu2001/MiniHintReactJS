@@ -45,7 +45,6 @@ const ListOrdersManage =() => {
         })
     }
 
-    console.log(orders)
     const handleDelete = (id) => {
         OrderService.deleteOrder(id).then(res => {
             setOrders(prevState => {

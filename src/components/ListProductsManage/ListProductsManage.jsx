@@ -19,7 +19,6 @@ const ListProductsManage = () => {
             })
         })
     }
-    console.log(products.productImage)
     return (
         <table className="w-full text-center mt-[17px]">
                         <tr>

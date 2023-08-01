@@ -9,7 +9,6 @@ const ListCategoriesManage =() => {
     useEffect(() => {
         CategoryServices.getCategory().then(res => {
             let categoryList = res.data
-            console.log(categoryList)
             setCategories(categoryList)
         })
     }, [])

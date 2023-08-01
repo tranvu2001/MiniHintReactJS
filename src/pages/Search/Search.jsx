@@ -46,9 +46,7 @@ const Search = () => {
         fetchData() 
     }, [])
     
-    console.log(productFilter)
-    console.log(products)
-
+  
 
     const handleOpen = () => setOpen(true)    
     const handleClose = () => setOpen(false)    
@@ -87,7 +85,6 @@ const Search = () => {
             
             return true
         })
-        // console.log(result)
         setProductFilter(result)
     }
 

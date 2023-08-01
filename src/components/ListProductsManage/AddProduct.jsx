@@ -63,7 +63,6 @@ const AddProduct = () => {
     const handleFileRead = async (e, id) => {
         const file = e.target.files[0]
         const base64 = await convertBase64(file)
-        // console.log(base64)
         let key
         if (id === 1) {
             key = 'productImage'
@@ -217,7 +216,6 @@ const AddProduct = () => {
         })
     }, [])
 
-    console.log(input)
 
     return (
         <div className="add-product w-full text-center mt-[17px]">

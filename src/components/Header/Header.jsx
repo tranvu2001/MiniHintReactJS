@@ -62,8 +62,6 @@ const Header = () => {
         }   
         fetchData()     
     }, [])
-    console.log(products)
-    console.log(authContext.productsSearch)
 
     const handleChange = (e) => {
         const value = e.target.value
@@ -88,7 +86,6 @@ const Header = () => {
 
                 return true
             })
-            console.log(result)
             authContext.setProductsSearch(result)
         } else {
             authContext.setProductsSearch(products)

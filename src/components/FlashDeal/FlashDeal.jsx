@@ -18,7 +18,6 @@ const FlashDeal = () => {
     const splitProducts = (start, end) => {
         return products.slice(start, end)
     }
-    console.log(products)
     return (
         <div className={cx('flash-deal')}>
             <h2 className={cx('flash-deal-title')}>Flash Deal</h2>

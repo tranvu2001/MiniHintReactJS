@@ -64,8 +64,6 @@ const AddCategory = () => {
     //         categoryImage: input.categoryImage
     //     }))
     // }, [image])
-    console.log(input)
-    // console.log(image)
     return (
         <div className="add-category w-full text-center mt-[17px]">
             <form

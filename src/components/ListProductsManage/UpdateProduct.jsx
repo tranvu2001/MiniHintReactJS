@@ -39,7 +39,6 @@ const UpdateProduct = () => {
     const handleFileRead = async (e, id) => {
         const file = e.target.files[0]
         const base64 = await convertBase64(file)
-        // console.log(base64)
         let key
         if (id === 1) {
             key = 'productImage'
@@ -47,7 +46,6 @@ const UpdateProduct = () => {
             key = 'productImage2'
         }
 
-        console.log(key)
         setInput(prevState => ({
             ...prevState,
             [key]: base64
@@ -120,7 +118,6 @@ const UpdateProduct = () => {
             setBrands(res.data)
         })
     }, [])
-    console.log(input)
 
 
 

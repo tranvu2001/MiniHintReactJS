@@ -7,7 +7,6 @@ const Brands = () => {
 
     const [productByBrand, setProductByBrand] = useState([])
     const {brandId} = useParams()
-    console.log(brandId)
 
     useEffect(() => {
         ProductServices.getProducts().then(res => {
