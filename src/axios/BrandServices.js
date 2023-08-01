@@ -1,6 +1,6 @@
 import axios from "axios";
 // const BRAND_API_URL = 'http://localhost:8080/brands'
-const BRAND_API_URL = 'http://minihint-spring-boot.onrender.com/brands'
+const BRAND_API_URL = 'https://minihint-spring-boot.onrender.com/brands'
 
 class BrandServices {
     getBrand() {

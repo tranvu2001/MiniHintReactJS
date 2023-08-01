@@ -1,6 +1,6 @@
 import axios from "axios";
 // const CATEGORY_API_URL = 'http://localhost:8080/categories'
-const CATEGORY_API_URL = 'http://minihint-spring-boot.onrender.com/categories'
+const CATEGORY_API_URL = 'https://minihint-spring-boot.onrender.com/categories'
 
 class CategoryServices {
     getCategory() {
