@@ -14,15 +14,7 @@ const ViewProduct = () => {
     }, [])
 
 
-    const splitString = (string) => {
-        const stringToArray = string?.split("")
-        const removeValueFrom = [0, 1]
-        const result = stringToArray?.filter((value, index) => {
-            return removeValueFrom.indexOf(index) === - 1
-        })
-
-        return result?.join('')
-    }
+    
 
     const renderBrand = (brand) => {
         switch (brand) {
@@ -88,8 +80,8 @@ const ViewProduct = () => {
                     <tr><th colSpan={2}>Thông tin sản phẩm</th></tr>
                     <tr><td>Tên sản phẩm</td><td>{product.productName}</td></tr>
                     <tr><td>Giá</td><td>{numberWithCommas(Number(product.price)) + 'vnd'}</td></tr>
-                    <tr><td>Hình 1</td><td><img src={splitString(product?.productImage)} className="mx-auto my-0 w-[120px]" alt="hinh1" /></td></tr>
-                    <tr><td>Hình 2</td><td><img src={splitString(product?.productImage2)} className="mx-auto my-0 w-[120px]" alt="hinh2" /></td></tr>
+                    <tr><td>Hình 1</td><td><img src={product.productImage} className="mx-auto my-0 w-[120px]" alt="hinh1" /></td></tr>
+                    <tr><td>Hình 2</td><td><img src={product.productImage2} className="mx-auto my-0 w-[120px]" alt="hinh2" /></td></tr>
                     <tr><td>Chi tiết sản phẩm</td><td>{product.description}</td></tr>
                     <tr><td>Danh mục</td><td>{renderCategory(product.categoryId)}</td></tr>
                     <tr><td>Thương hiệu</td><td>{renderBrand(product.brandId)}</td></tr>

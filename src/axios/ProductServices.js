@@ -1,5 +1,6 @@
 import axios from 'axios'
 const PRODUCT_API_URL = "http://minihint-spring-boot.onrender.com/products"
+// const PRODUCT_API_URL = "http://localhost:8080/products"
 const PRODUCT_DETAIL_API_URL = "http://localhost:8080/products/detail"
 const PRODUCT_SEARCH_API_URL = "http://localhost:8080/products/search?productName="
 

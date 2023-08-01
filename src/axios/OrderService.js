@@ -1,5 +1,6 @@
 import axios from 'axios'
-const ORDER_API_URL = "http://localhost:8080/orders"
+// const ORDER_API_URL = "http://localhost:8080/orders"
+const ORDER_API_URL = "http://minihint-spring-boot.onrender.com/orders"
 
 class OrderServices {
     getOrders() {
